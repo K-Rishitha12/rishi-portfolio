@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kadali Rishitha Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Fixed Header */
+    header {
+      background-color: pink;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-size:200%;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .spacer {
+      height: 90px;
+    }
+
+    /* About Section */
+    #about {
+      background-color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #about h2 {
+      color: pink;
+      margin-bottom: 40px;
+      font-size: 300%;
+    }
+
+    .about-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid pink;
+    }
+
+    .about-text {
+      max-width: 500px;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .section-pink {
+      background-color: pink;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .section-white {
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .skills-buttons button {
+      background-color: white;
+      color: pink;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .project img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .project-details {
+      max-width: 600px;
+      text-align: left;
+      margin: 10px;
+    }
+
+    .project-details h3 {
+      color: pink;
+      margin-bottom: 10px;
+    }
+
+    .resume button {
+      background-color: pink;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    .contact a {
+      color: white;
+    }
+
+    footer {
+      background-color: pink;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .back-to-top {
+      display: block;
+      margin-top: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text {
+        text-align: center;
+      }
+
+      .project {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .project-details {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Kadali Rishitha</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="ammulu.jpg" alt="Profile Photo" class="profile-photo" />
+      <div class="about-text">
+        <p>
+          Hi, I'm Kadali Rishitha. I am passionate about web development and love to learn new technologies. I enjoy solving real-world problems through coding and am always eager to collaborate on exciting projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-pink">                       
+    <h2>Skills</h2>
+    <div class="skills-buttons">
+      <button>HTML</button>
+      <button>CSS</button>
+      <button>JavaScript</button>
+      <button>Python</button>
+      <button>AWS</button>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-white">
+    <h2 style="color: pink;">Projects</h2>
+    <div class="project">
+      <img src="port.jpg" alt="Project 1">
+        
+      <div class="project-details">
+        <h3><b>MY PORTFOLIO<b></h3>
+        <p>This is a description of project 1. It demonstrates how I used HTML, CSS, and JavaScript to build an interactive web application.</p>
+         <button class="project-btn" onclick="window.open('https://K-Rishitha12.github.io/my-portfolio/', '_blank')">
+  View Project
+</button>           
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="cal.jpg" alt="Project 2">
+      <div class="project-details">
+        <h3>Calculator</h3>
+        <p>A device that perform basic mathematical operations like addition,subtraction,multiplicatio,division</p>
+<a href="https://K-Rishitha12.github.io/calculator/" target="_blank">
+  <button>View Project</button>
+</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section-pink">
+    <h2>Resume</h2>
+    <a href="my-resume.png" download>
+      <button>View Resume</button>
+    </a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-white">
+    <h2 style="color: pink;">Contact Me</h2>
+    <p>📞 Phone: 9502520449</p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/rishitha-kadali-876774350" target="_blank">www.linkedin.com/in/rishitha-kadali</a></p>
+    <p>✉️ <b>Email</b>: rishithakadali49@gmail.com</p>
+     
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Kadali Rishitha. All rights reserved.
+    <a href="#" class="back-to-top">Back to Top ↑</a>
+  </footer>
+
+</body>
+</html>
